@@ -8,7 +8,7 @@
 
 (ns lobos.metadata
   "Helpers to query the database's meta-data."
-  (:require (clojure.java.jdbc [internal :as sqlint])
+  (:require [clojure.java.jdbc :as sqlint]
             (lobos [compiler :as compiler]
                    [connectivity :as conn]
                    [schema :as schema]))

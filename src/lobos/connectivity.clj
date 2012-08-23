@@ -9,7 +9,8 @@
 (ns lobos.connectivity
   "A set of connectivity functions."
   (:refer-clojure :exclude [defonce])
-  (:require (clojure.java.jdbc [internal :as sqlint]))
+  (:require [clojure.java.jdbc :as sqlint]
+	  lobos.connectivity.jdbc-2-support)
   (:use lobos.utils))
 
 ;; -----------------------------------------------------------------------------
